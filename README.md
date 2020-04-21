@@ -17,3 +17,8 @@ Currently, people are stuck in their homes and looking for something enjoyable t
 ## Audience:
 
  The intended audience for this application consists or Millenials who enjoy a wave of nostalgia, as well as a new audience in today's youth who may not be familiar with the game at all. 
+
+## APIs:
+
+For random city (in the Life Prediction page/route) - http://geodb-cities-api.wirefreethought.com/
+For random name (in the Life Prediction page/route) - still searching
