@@ -10,7 +10,7 @@
 -----
 ## Reason for app:
 
-Currrently, people are stuck in their homes and looking for something enjoyable to do. Simple but entertaining games have taken a steep incline in popularity across social media as people fight the quarantine funk. This, to me, seems like the perfect time to bring back a version of a game that we all got countless laughs from as children.
+Currently, people are stuck in their homes and looking for something enjoyable to do. Simple but entertaining games have taken a steep incline in popularity across social media as people fight the quarantine funk. This, to me, seems like the perfect time to bring back a version of a game that we all got countless laughs from as children.
 
 
 -----
