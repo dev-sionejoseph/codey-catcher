@@ -5,7 +5,7 @@
 -----
 ## Wireframe:
 
-![Wireframe]()
+![Wireframe](codeycatcher-wireframe.png)
 
 -----
 ## Reason for app:
