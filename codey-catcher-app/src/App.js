@@ -6,17 +6,26 @@ import {
 } from "react-router-dom";
 import './App.css';
 import Navbar from './components/Navbar'
+import Instructions from './components/Instructions'
 import Catcher from './components/Catcher'
 import LifeAnswer from './components/LifeAnswer'
 import NameInput from './components/NameInput'
 import QuestionInput from './components/QuestionInput'
 
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
+class App extends Component {
+  render () {
+    return (
+      <Router>
+        <div className="App">
+          <Switch>
+            <Route exact path="/">
+                <Instructions />
+            </Route>
+          </Switch>
+      </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
