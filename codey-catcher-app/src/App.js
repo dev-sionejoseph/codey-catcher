@@ -11,6 +11,8 @@ import Catcher from './components/Catcher'
 import LifeAnswer from './components/LifeAnswer'
 import NameInput from './components/NameInput'
 import QuestionInput from './components/QuestionInput'
+import SpouseGenderSelect from './components/SpouseGenderSelect'
+import KidsOrPetsSelect from './components/KidsOrPetsSelect'
 
 class App extends Component {
   render () {
@@ -23,6 +25,10 @@ class App extends Component {
             </Route>
             <Route path="/divination">
               <Navbar />
+              <div className="choices">
+                <SpouseGenderSelect />
+                <KidsOrPetsSelect />
+              </div>
               <Catcher />
               <div className="answers">
                 <LifeAnswer />
