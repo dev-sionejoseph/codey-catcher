@@ -21,6 +21,16 @@ class App extends Component {
             <Route exact path="/">
                 <Instructions />
             </Route>
+            <Route path="/divination">
+              <Navbar />
+              <Catcher />
+              <div className="answers">
+                <LifeAnswer />
+                <LifeAnswer />
+                <LifeAnswer />
+                <LifeAnswer />
+              </div>
+            </Route>
           </Switch>
       </div>
       </Router>
