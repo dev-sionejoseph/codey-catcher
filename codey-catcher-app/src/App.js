@@ -43,6 +43,12 @@ class App extends Component {
               <QuestionInput />
               <Catcher />
             </Route>
+            <Route path="/loveorloss">
+              <Navbar />
+              <NameInput />
+              <Catcher />
+              <NameInput />
+            </Route>
           </Switch>
       </div>
       </Router>
