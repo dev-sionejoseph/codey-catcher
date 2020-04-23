@@ -31,10 +31,11 @@ class App extends Component {
               </div>
               <Catcher />
               <div className="answers">
-                <LifeAnswer />
-                <LifeAnswer />
-                <LifeAnswer />
-                <LifeAnswer />
+                <LifeAnswer name="spouse"/>
+                <LifeAnswer name="home"/>
+                <LifeAnswer name="city"/>
+                <LifeAnswer name="dependents"/>
+                <LifeAnswer name="transportation"/>
               </div>
             </Route>
           </Switch>
