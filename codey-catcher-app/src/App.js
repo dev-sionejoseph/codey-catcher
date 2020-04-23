@@ -38,6 +38,11 @@ class App extends Component {
                 <LifeAnswer name="transportation"/>
               </div>
             </Route>
+            <Route path="/askcodey">
+              <Navbar />
+              <QuestionInput />
+              <Catcher />
+            </Route>
           </Switch>
       </div>
       </Router>
