@@ -19,12 +19,12 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
+          <Navbar />
           <Switch>
             <Route exact path="/">
                 <Instructions />
             </Route>
             <Route path="/divination">
-              <Navbar />
               <div className="choices">
                 <SpouseGenderSelect />
                 <KidsOrPetsSelect />
@@ -39,15 +39,12 @@ class App extends Component {
               </div>
             </Route>
             <Route path="/askcodey">
-              <Navbar />
               <QuestionInput />
               <Catcher />
             </Route>
             <Route path="/loveorloss">
-              <Navbar />
               <NameInput />
               <Catcher />
-              <NameInput />
             </Route>
           </Switch>
       </div>
