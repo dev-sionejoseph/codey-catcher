@@ -15,7 +15,7 @@ export default class NameInput extends Component {
     }
     handleChange(e){
         this.setState ({
-            [event.target.name]: event.target.value
+            [e.target.name]: e.target.value
         })
     }
     
