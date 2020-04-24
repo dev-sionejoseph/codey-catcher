@@ -9,7 +9,7 @@ export default class NameInput extends Component {
             nameTwo:''
         }
 
-        this.handleChange = this.handleChange
+        this.handleChange = this.handleChange.bind(this)
     }
 
 
