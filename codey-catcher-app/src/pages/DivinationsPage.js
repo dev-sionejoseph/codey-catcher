@@ -30,13 +30,24 @@ export default class DivinationsPage extends Component {
                 transportation:''
             }
         }
+        this.handleSelect = this.handleSelect.bind(this);
     }
+
+    handleSelect(e){
+        let choice = e.props.value;
+        let key = e.props.key;
+
+        this.setState({
+            selections: e.props.value
+        })
+    }
+
     render() {
         return (
             <div id="divinations-page">
                 <div id="divinations-left">
-                    <SpouseGenderSelect />
-                    <KidsOrPetsSelect />
+                    <SpouseGenderSelect key="spouse"/>
+                    <KidsOrPetsSelect key="descendents"/>
                 </div>
                 <div id="divinations-center">
                     <Catcher />
