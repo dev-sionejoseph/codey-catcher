@@ -11,9 +11,9 @@ export default class DivinationsPage extends Component {
 
         this.state={
             spouse: {
-                man: [John, Brandon, Leo, Chris],
-                woman: [Liz, Mya, Ashley, Brionne],
-                nonbinary: [Payton, Jessie, Morgan, Casey]
+                man: ['John', 'Brandon', 'Leo', 'Chris'],
+                woman: ['Liz', 'Mya', 'Ashley', 'Brionne'],
+                nonbinary: ['Payton', 'Jessie', 'Morgan', 'Gael']
             },
             home:['condo', 'apartment', 'townhome', 'tiny home', 'mansion' , 'house'],
             city:'',
@@ -36,9 +36,10 @@ export default class DivinationsPage extends Component {
     handleSelect(e){
         let choice = e.props.value;
         let key = e.props.key;
+        let nestedState = this.state.selections[key]
 
         this.setState({
-            selections: e.props.value
+            [nestedState]: nestedState.choice[0]
         })
     }
 
