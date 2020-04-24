@@ -10,14 +10,24 @@ export default class DivinationsPage extends Component {
         super(props);
 
         this.state={
-            descendents: {
-                kids: [0,1,2,3],
-                pets: [0,1,2,3]
-            },
             spouse: {
                 man: [John, Brandon, Leo, Chris],
                 woman: [Liz, Mya, Ashley, Brionne],
                 nonbinary: [Payton, Jessie, Morgan, Casey]
+            },
+            home:['condo', 'apartment', 'townhome', 'tiny home', 'mansion' , 'house'],
+            city:'',
+            descendents: {
+                kids: [0,1,2,3],
+                pets: [0,1,2,3]
+            },
+            transportation: ["sports car", "bike", "minivan", "pogo stick", "hatchback", "converted school bus"],
+            selections: {
+                spouse:'',
+                home:'',
+                city:'',
+                descendents:'',
+                transportation:''
             }
         }
     }
