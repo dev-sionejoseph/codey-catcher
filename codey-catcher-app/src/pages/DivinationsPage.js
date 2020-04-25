@@ -37,7 +37,7 @@ export default class DivinationsPage extends Component {
     }
 
     handleSelect(e){
-        let key = this.props.key;
+        let key = SpouseGenderSelect.props.key;
 
         this.setState({
             [key]: e.target.value
