@@ -10,6 +10,9 @@ export default class DivinationsPage extends Component {
         super(props);
 
         this.state={
+            started: false,
+            chosenGender:'',
+            chosenDescendent:'',
             spouse: {
                 man: ['John', 'Brandon', 'Leo', 'Chris'],
                 woman: ['Liz', 'Mya', 'Ashley', 'Brionne'],
@@ -36,10 +39,9 @@ export default class DivinationsPage extends Component {
     handleSelect(e){
         let choice = e.props.value;
         let key = e.props.key;
-        let nestedState = this.state.selections[key]
 
         this.setState({
-            [nestedState]: nestedState.choice[0]
+            [key]: choice
         })
     }
 
@@ -47,18 +49,19 @@ export default class DivinationsPage extends Component {
         return (
             <div id="divinations-page">
                 <div id="divinations-left">
-                    <SpouseGenderSelect key="spouse"/>
-                    <KidsOrPetsSelect key="descendents"/>
+                    <SpouseGenderSelect key="chosenGender"/>
+                    <KidsOrPetsSelect key="chosenDescendent"/>
+                    <button id="go">Find your Future!</button>
                 </div>
                 <div id="divinations-center">
                     <Catcher />
                 </div>
                 <div id="divinations-center">
-                    <LifeAnswer />
-                    <LifeAnswer />
-                    <LifeAnswer />
-                    <LifeAnswer />
-                    <LifeAnswer />
+                    <LifeAnswer info={this.state.selections['spouse']}/>
+                    <LifeAnswer info={this.state.selections['home']}/>
+                    <LifeAnswer info={this.state.selections['city']}/>
+                    <LifeAnswer info={this.state.selections['descendents']}/>
+                    <LifeAnswer info={this.state.selections['transportation']}/>
                 </div>
             </div>
         )
