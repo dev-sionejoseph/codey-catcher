@@ -45,7 +45,7 @@ export default class DivinationsPage extends Component {
     }
 
     handleSubmit(e){
-        if(this.state.started === true){
+        if(this.state.started === false){
             let gender = this.state.spouse[this.state.chosenGender]
             let dependent = this.state.dependents[this.state.chosenDependent]
 
