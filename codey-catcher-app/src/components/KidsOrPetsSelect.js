@@ -5,10 +5,10 @@ export default class KidsOrPetsSelect extends Component {
         return (
             <div id="kids-or-pets-wrap">
                 <label>Kids or Pets?</label>
-                <select id="dependents-select">
-                    <option value="none" onChange={this.props.onChange}></option>
-                    <option value="kids" onChange={this.props.onChange}>Kids</option>
-                    <option value="pets" onChange={this.props.onChange}>Pets</option>
+                <select id="dependents-select" name={this.props.name} onChange={this.props.onChange}>
+                    <option value="none" ></option>
+                    <option value="kids" >Kids</option>
+                    <option value="pets" >Pets</option>
                 </select>
             </div>
         )
