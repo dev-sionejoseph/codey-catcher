@@ -13,14 +13,14 @@ export default class DivinationsPage extends Component {
         this.state={
             started: false,
             chosenGender:'',
-            chosenDescendent:'',
+            chosenDependent:'',
             spouse: {
                 man: ['John', 'Brandon', 'Leo', 'Chris'],
                 woman: ['Liz', 'Mya', 'Ashley', 'Brionne'],
                 nonbinary: ['Payton', 'Jessie', 'Morgan', 'Gael']
             },
             home:['condo', 'apartment', 'townhome', 'tiny home', 'mansion' , 'house'],
-            descendents: {
+            dependents: {
                 kids: [0,1,2,3],
                 pets: [0,1,2,3]
             },
@@ -28,7 +28,7 @@ export default class DivinationsPage extends Component {
             selections: {
                 spouse:'',
                 home:'',
-                descendents:'',
+                dependents:'',
                 transportation:''
             }
         }
@@ -48,14 +48,14 @@ export default class DivinationsPage extends Component {
     handleSubmit(e){
         if(this.state.started === true){
             let gender = this.state.spouse[this.state.chosenGender]
-            let descendent = this.state.descendents[this.state.chosenDescendent]
+            let dependent = this.state.dependents[this.state.chosenDependent]
 
             this.setState({
                 started: true,
                 selections:{
                     spouse: gender[Math.floor(Math.random() * gender.length)],
                     home: this.state.home[Math.floor(Math.random() * this.state.home.length)],
-                    descendents: descendent[Math.floor(Math.random() * descendent.length)],
+                    dependents: dependent[Math.floor(Math.random() * dependent.length)],
                     transportation: this.state.transportation[Math.floor(Math.random() * this.state.transportation.length)]
                 }
 
@@ -68,7 +68,7 @@ export default class DivinationsPage extends Component {
             <div id="divinations-page">
                 <div id="divinations-left">
                     <SpouseGenderSelect key="chosenGender" onChange={this.handleSelect}/>
-                    <KidsOrPetsSelect key="chosenDescendent" onChange={this.handleSelect}/>
+                    <KidsOrPetsSelect key="chosenDependent" onChange={this.handleSelect}/>
                     <button id="go" onClick={this.handleSubmit}>Find your Future!</button>
                 </div>
                 <div id="divinations-center">
@@ -77,7 +77,7 @@ export default class DivinationsPage extends Component {
                 <div id="divinations-center">
                     <LifeAnswer info={this.state.selections['spouse']}/>
                     <LifeAnswer info={this.state.selections['home']}/>
-                    <LifeAnswer info={this.state.selections['descendents']}/>
+                    <LifeAnswer info={this.state.selections['dependents']}/>
                     <LifeAnswer info={this.state.selections['transportation']}/>
                 </div>
             </div>
