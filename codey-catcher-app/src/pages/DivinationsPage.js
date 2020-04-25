@@ -37,10 +37,10 @@ export default class DivinationsPage extends Component {
     }
 
     handleSelect(e){
-        let key = SpouseGenderSelect.props.key;
+        let tag = e.target.tag;
 
         this.setState({
-            [key]: e.target.value
+            [tag]: e.target.value
         })
     }
 
@@ -66,8 +66,8 @@ export default class DivinationsPage extends Component {
         return (
             <div id="divinations-page">
                 <div id="divinations-left">
-                    <SpouseGenderSelect key="chosenGender" onChange={this.handleSelect}/>
-                    <KidsOrPetsSelect key="chosenDependent" onChange={this.handleSelect}/>
+                    <SpouseGenderSelect name="chosenGender" onChange={this.handleSelect}/>
+                    <KidsOrPetsSelect name="chosenDependent" onChange={this.handleSelect}/>
                     <button id="go" onClick={this.handleSubmit}>Find your Future!</button>
                 </div>
                 <div id="divinations-center">
