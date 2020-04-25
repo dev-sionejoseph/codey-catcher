@@ -54,7 +54,9 @@ export default class DivinationsPage extends Component {
                 started: true,
                 selections:{
                     spouse: gender[Math.floor(Math.random() * gender.length)],
-                    home: this.state.home[Math.floor(Math.random() * this.state.home.length)]
+                    home: this.state.home[Math.floor(Math.random() * this.state.home.length)],
+                    descendents: descendent[Math.floor(Math.random() * descendent.length)],
+                    transportation: this.state.transportation[Math.floor(Math.random() * this.state.transportation.length)]
                 }
 
             })
