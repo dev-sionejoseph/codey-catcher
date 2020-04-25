@@ -11,6 +11,7 @@ import Catcher from './components/Catcher'
 import DivinationsPage from './pages/DivinationsPage'
 import NameInput from './components/NameInput'
 import QuestionInput from './components/QuestionInput'
+import LoveOrLossPage from './pages/LoveOrLossPage';
 
 
 class App extends Component {
@@ -31,8 +32,7 @@ class App extends Component {
               <Catcher />
             </Route>
             <Route path="/loveorloss">
-              <NameInput />
-              <Catcher />
+              <LoveOrLossPage />
             </Route>
           </Switch>
       </div>
