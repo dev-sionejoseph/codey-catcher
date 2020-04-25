@@ -31,7 +31,7 @@ export default class LoveOrLossPage extends Component {
         axios.get(url, {
             headers: {
                 "x-rapidapi-host": "love-calculator.p.rapidapi.com",
-		        "x-rapidapi-key": REACT_APP_LOVE_CALCULATOR_KEY
+		        "x-rapidapi-key": process.env.REACT_APP_LOVE_CALCULATOR_KEY
             },
         })
         .then(res => {
