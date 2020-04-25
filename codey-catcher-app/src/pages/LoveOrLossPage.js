@@ -47,7 +47,7 @@ export default class LoveOrLossPage extends Component {
                     <NameInput onChange={this.handleChange} onClick={this.handleSubmit} />
                 </div>
                 <div id="love-loss-center">
-
+                    <Catcher />
                 </div>
                 <div id="love-loss-right">
                     <div id="love-loss-results">
