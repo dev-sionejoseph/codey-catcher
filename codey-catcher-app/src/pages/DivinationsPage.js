@@ -49,8 +49,8 @@ export default class DivinationsPage extends Component {
         return (
             <div id="divinations-page">
                 <div id="divinations-left">
-                    <SpouseGenderSelect key="chosenGender"/>
-                    <KidsOrPetsSelect key="chosenDescendent"/>
+                    <SpouseGenderSelect key="chosenGender" onChange={this.handleSelect}/>
+                    <KidsOrPetsSelect key="chosenDescendent" onChange={this.handleSelect}/>
                     <button id="go">Find your Future!</button>
                 </div>
                 <div id="divinations-center">
