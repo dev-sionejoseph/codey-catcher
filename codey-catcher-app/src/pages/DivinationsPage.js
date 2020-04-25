@@ -67,7 +67,7 @@ export default class DivinationsPage extends Component {
             <div id="divinations-page">
                 <div id="divinations-left">
                     <SpouseGenderSelect name='chosenGender' onChange={this.handleSelect}/>
-                    <KidsOrPetsSelect name="chosenDependent" onChange={this.handleSelect}/>
+                    <KidsOrPetsSelect name='chosenDependent' onChange={this.handleSelect}/>
                     <button id="go" onClick={this.handleSubmit}>Find your Future!</button>
                 </div>
                 <div id="divinations-center">
