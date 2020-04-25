@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import axios from 'axios';
+// import axios from 'axios';
 import SpouseGenderSelect from '../components/SpouseGenderSelect';
 import KidsOrPetsSelect from '../components/KidsOrPetsSelect';
 import Catcher from '../components/Catcher';
@@ -63,19 +63,13 @@ export default class DivinationsPage extends Component {
         }
     }
 
-    pickOption(key) {
-        
-    }
-
-
-
     render() {
         return (
             <div id="divinations-page">
                 <div id="divinations-left">
                     <SpouseGenderSelect key="chosenGender" onChange={this.handleSelect}/>
                     <KidsOrPetsSelect key="chosenDescendent" onChange={this.handleSelect}/>
-                    <button id="go">Find your Future!</button>
+                    <button id="go" onClick={this.handleSubmit}>Find your Future!</button>
                 </div>
                 <div id="divinations-center">
                     <Catcher />
