@@ -1,30 +1,15 @@
 import React, { Component } from 'react'
 
 export default class SpouseGenderSelect extends Component {
-    constructor(props){
-        super(props);
-
-        this.state= {
-            selection:''
-        }
-
-        this.handleSelect = this.handleSelect.bind(this);
-    }
-
-    handleSelect(e){
-        this.setState({
-            selection: e.props.value
-        })
-    }
-
     render() {
         return (
             <div id="spouse-gender-wrap">
-                <label for="gender-select">Spouse Gender?</label>
-                <select id="gender-select">
-                    <option value="man" onChange={this.handleSelect}>Man</option>
-                    <option value="woman" onChange={this.handleSelect}>Woman</option>
-                    <option value="nonbinary" onChange={this.handleSelect}>Nonbinary</option>
+                <label>Spouse Gender?</label>
+                <select id="gender-select" key="chosenGender" onChange={this.props.onChange}>
+                    <option value="none" ></option>
+                    <option value="man" >Man</option>
+                    <option value="woman">Woman</option>
+                    <option value="nonbinary">Nonbinary</option>
                 </select>
             </div>
         )
