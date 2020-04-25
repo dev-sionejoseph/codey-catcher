@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import axios from 'axios';
 import SpouseGenderSelect from '../components/SpouseGenderSelect';
 import KidsOrPetsSelect from '../components/KidsOrPetsSelect';
 import Catcher from '../components/Catcher';
@@ -19,7 +20,6 @@ export default class DivinationsPage extends Component {
                 nonbinary: ['Payton', 'Jessie', 'Morgan', 'Gael']
             },
             home:['condo', 'apartment', 'townhome', 'tiny home', 'mansion' , 'house'],
-            city:'',
             descendents: {
                 kids: [0,1,2,3],
                 pets: [0,1,2,3]
@@ -28,12 +28,12 @@ export default class DivinationsPage extends Component {
             selections: {
                 spouse:'',
                 home:'',
-                city:'',
                 descendents:'',
                 transportation:''
             }
         }
         this.handleSelect = this.handleSelect.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleSelect(e){
@@ -41,9 +41,31 @@ export default class DivinationsPage extends Component {
         let key = e.props.key;
 
         this.setState({
-            [key]: choice
+            [this.state[key]]: choice
         })
     }
+
+    handleSubmit(e){
+        if(this.state.started === true){
+            let gender = this.state.spouse[chosenGender]
+            let descendent = this.state.descendents[chosenDescendent]
+
+            this.setState({
+                started: true,
+                selections:{
+                    spouse: gender[Math.floor(Math.random() * gender.length)],
+                    home: this.state.home[Math.floor(Math.random() * this.state.home.length)]
+                }
+
+            })
+        }
+    }
+
+    pickOption(key) {
+        
+    }
+
+
 
     render() {
         return (
@@ -59,7 +81,6 @@ export default class DivinationsPage extends Component {
                 <div id="divinations-center">
                     <LifeAnswer info={this.state.selections['spouse']}/>
                     <LifeAnswer info={this.state.selections['home']}/>
-                    <LifeAnswer info={this.state.selections['city']}/>
                     <LifeAnswer info={this.state.selections['descendents']}/>
                     <LifeAnswer info={this.state.selections['transportation']}/>
                 </div>
@@ -67,3 +88,4 @@ export default class DivinationsPage extends Component {
         )
     }
 }
+
