@@ -8,11 +8,10 @@ import './App.css';
 import Navbar from './components/Navbar'
 import Instructions from './components/Instructions'
 import Catcher from './components/Catcher'
-import LifeAnswer from './components/LifeAnswer'
+import DivinationsPage from './pages/DivinationsPage'
 import NameInput from './components/NameInput'
 import QuestionInput from './components/QuestionInput'
-import SpouseGenderSelect from './components/SpouseGenderSelect'
-import KidsOrPetsSelect from './components/KidsOrPetsSelect'
+
 
 class App extends Component {
   render () {
@@ -25,18 +24,7 @@ class App extends Component {
                 <Instructions />
             </Route>
             <Route path="/divination">
-              <div className="choices">
-                <SpouseGenderSelect />
-                <KidsOrPetsSelect />
-              </div>
-              <Catcher />
-              <div className="answers">
-                <LifeAnswer name="spouse"/>
-                <LifeAnswer name="home"/>
-                <LifeAnswer name="city"/>
-                <LifeAnswer name="dependents"/>
-                <LifeAnswer name="transportation"/>
-              </div>
+              <DivinationsPage />
             </Route>
             <Route path="/askcodey">
               <QuestionInput />
