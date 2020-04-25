@@ -26,10 +26,10 @@ export default class DivinationsPage extends Component {
             },
             transportation: ["sports car", "bike", "minivan", "pogo stick", "hatchback", "converted school bus"],
             selections: {
-                spouse:'',
-                home:'',
-                dependents:'',
-                transportation:''
+                spouse:'e',
+                home:'i',
+                dependents:'e',
+                transportation:'i'
             }
         }
         this.handleSelect = this.handleSelect.bind(this);
@@ -37,11 +37,10 @@ export default class DivinationsPage extends Component {
     }
 
     handleSelect(e){
-        let choice = e.props.value;
-        let key = e.props.key;
+        let key = this.props.key;
 
         this.setState({
-            [this.state[key]]: choice
+            [key]: e.target.value
         })
     }
 
