@@ -24,10 +24,14 @@ export default class LoveOrLossPage extends Component {
     }
 
     handleSubmit(e){
-        axios.get('https://httpbin.org/get', {
+        let fname = this.state.fname;
+        let sname = this.state.sname;
+        let url = "https://love-calculator.p.rapidapi.com/getPercentage?fname="+ fname + "&sname=" + sname
+
+        axios.get(url, {
             headers: {
                 "x-rapidapi-host": "love-calculator.p.rapidapi.com",
-		        "x-rapidapi-key": "fca71f8c8cmshdc95ba1e09ee3efp1fcc75jsn871d103cc45b"
+		        "x-rapidapi-key": REACT_APP_LOVE_CALCULATOR_KEY
             },
         })
         .then(res => {
