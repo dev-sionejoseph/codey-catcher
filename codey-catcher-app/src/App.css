@@ -36,13 +36,24 @@ nav li{
 
 .topTriangle {
   width: 0;
-  height: 0;
+  height: 0; 
 }
 
 #top {
   border-left: 200px solid transparent;
   border-right: 200px solid transparent;
-  border-top: 200px solid #f00;
+  border-top: 200px solid rgba(213, 107, 255);
 }
 
+#right {
+  border-top: 200px solid transparent;
+  border-bottom: 200px solid transparent;
+  border-left: 200px solid turquoise;
+}
+
+#bottom {
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 200px solid rgb(6, 248, 66);
+}
 
