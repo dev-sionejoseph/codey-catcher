@@ -5,11 +5,11 @@ import {
   Route,
 } from "react-router-dom";
 import './App.css';
-import Navbar from './components/Navbar'
-import Instructions from './components/Instructions'
-import Catcher from './components/Catcher'
-import DivinationsPage from './pages/DivinationsPage'
-import QuestionInput from './components/QuestionInput'
+import Navbar from './components/Navbar';
+import Instructions from './components/Instructions';
+import Catcher from './components/Catcher';
+import DivinationsPage from './pages/DivinationsPage';
+import AskCodeyPage from './pages/AskCodeyPage';
 import LoveOrLossPage from './pages/LoveOrLossPage';
 
 
@@ -21,14 +21,13 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path="/">
-                <Instructions />
+              <Instructions />
             </Route>
             <Route path="/divination">
               <DivinationsPage />
             </Route>
             <Route path="/askcodey">
-              <QuestionInput />
-              <Catcher />
+              <AskCodeyPage />
             </Route>
             <Route path="/loveorloss">
               <LoveOrLossPage />
