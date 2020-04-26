@@ -1,35 +1,15 @@
 import React, { Component } from 'react'
 
 export default class NameInput extends Component {
-    constructor(props){
-        super(props);
-
-        this.state= {
-            nameOne:'',
-            nameTwo:''
-        }
-
-        this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
-
-    }
-    handleChange(e){
-        this.setState ({
-            [e.target.name]: e.target.value
-        })
-    }
-    
-    handleSubmit(e){
-        
-    }
-
 
     render() {
         return (
             <div>
-                <input type="text" id="name-one" name="nameOne" value={this.state.nameOne}></input>
-                <input type="text" id="name-two" name="nameTwo" value={this.state.nameTwo}></input>
-                <button id="compatibility-button">Love or Loss?</button>
+                <label>Your First Name:</label>
+                <input type="text" id="fname-input" name="fname" onChange={this.props.onChange}></input>
+                <label>Partner's First Name</label>
+                <input type="text" id="sname-input" name="sname" onChange={this.props.onChange}></input>
+                <button id="compatibility-button" onClick={this.props.onClick}>Love or Loss?</button>
             </div>
         )
     }
