@@ -46,6 +46,7 @@ nav li{
 
 .bottomDiamond {
   background-image: url(./assets/images/catcher-background.jpg) ;
+  background-position: center;
   height: 400px;
   width: 400px;
 }
@@ -81,7 +82,8 @@ nav li{
   border-top: 200px solid transparent;
   border-bottom: 200px solid rgb(6, 248, 66);
   position: absolute;
-
+  -webkit-animation: bottom-lift 1s ease-in-out infinite both;
+	animation: bottom-lift 1s ease-in-out infinite both;
 }
 
 #left {
@@ -133,6 +135,21 @@ out how to make them all work with one.*/
             transform: rotateY(70deg);
     -webkit-transform-origin: left;
             transform-origin: left;
+  }
+}
+
+@keyframes bottom-lift {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  100% {
+    -webkit-transform: rotateX(70deg);
+            transform: rotateX(70deg);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
   }
 }
 
