@@ -66,27 +66,27 @@ nav li{
 }
 
 #right {
-  border-top: 200px solid transparent;
+  border-left: 200px solid transparent;
   border-bottom: 200px solid transparent;
   border-right: 200px solid transparent;
-  border-left: 200px solid turquoise;
+  border-top: 200px solid turquoise;
   position: absolute;
 }
 
 #bottom {
   border-left: 200px solid transparent;
+  border-bottom: 200px solid transparent;
   border-right: 200px solid transparent;
-  border-top: 200px solid transparent;
-  border-bottom: 200px solid rgb(6, 248, 66);
+  border-top: 200px solid rgb(6, 248, 66);
   position: absolute;
 
 }
 
 #left {
-  border-top: 200px solid transparent;
+  border-left: 200px solid transparent;
   border-bottom: 200px solid transparent;
-  border-left: 200px solid transparent; 
-  border-right: 200px solid palevioletred;
+  border-right: 200px solid transparent; 
+  border-top: 200px solid palevioletred;
   position: absolute;
 }
  /* here is where the animation begins; this rotates the main Catcher */
