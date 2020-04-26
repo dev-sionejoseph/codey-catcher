@@ -39,6 +39,8 @@ nav li{
   display: flex;
   justify-content: center;
   rotate: 45deg;
+  -webkit-animation: spin-div 30s ease-in-out infinite both;
+	animation: spin-div 30s ease-in-out infinite both;
   
 }
 
@@ -84,6 +86,5 @@ nav li{
   border-left: 200px solid transparent; 
   border-right: 200px solid palevioletred;
   position: absolute;
-  align-self: flex-end ;
 }
 
