@@ -7,4 +7,19 @@
 #navWrap {
   background-color: rgb(213, 107, 255);
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+  text-decoration: none;
+}
+nav li{
+  list-style: none;
+  text-decoration: none;
+
 }
