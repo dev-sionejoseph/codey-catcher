@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import NameInput from '../components/NameInput';
 import Catcher from '../components/Catcher';
+import LoveLossResults from '../components/LoveLossResults'
 
 
 
@@ -64,10 +65,7 @@ export default class LoveOrLossPage extends Component {
                     <Catcher />
                 </div>
                 <div id="love-loss-right">
-                    <div id="love-loss-results">
-                        <p id="percentage">{this.state.percentage}</p>
-                        <p id="result">{this.state.result}</p>
-                    </div>
+                    <LoveLossResults percentageValue={this.state.percentage} resultValue={this.state.result}/>
                 </div>
                 
             </div>
