@@ -7,7 +7,6 @@ import {
 import './App.css';
 import Navbar from './components/Navbar';
 import Instructions from './components/Instructions';
-import Catcher from './components/Catcher';
 import DivinationsPage from './pages/DivinationsPage';
 import AskCodeyPage from './pages/AskCodeyPage';
 import LoveOrLossPage from './pages/LoveOrLossPage';
