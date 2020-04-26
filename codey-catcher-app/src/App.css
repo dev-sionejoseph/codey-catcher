@@ -32,6 +32,16 @@ nav li{
 
 .catcherWrap {
   height: 100%;
+  display: flex;
+  justify-content: center;
+  rotate: 45deg;
+  
+}
+
+.bottomDiamond {
+  background-image: url(./assets/images/catcher-background.jpg) ;
+  height: 400px;
+  width: 400px;
 }
 
 .topTriangle {
@@ -42,18 +52,34 @@ nav li{
 #top {
   border-left: 200px solid transparent;
   border-right: 200px solid transparent;
+  border-bottom: 200px solid transparent;
   border-top: 200px solid rgba(213, 107, 255);
+  position: absolute;
 }
 
 #right {
   border-top: 200px solid transparent;
   border-bottom: 200px solid transparent;
+  border-right: 200px solid transparent;
   border-left: 200px solid turquoise;
+  position: absolute;
 }
 
 #bottom {
   border-left: 200px solid transparent;
   border-right: 200px solid transparent;
+  border-top: 200px solid transparent;
   border-bottom: 200px solid rgb(6, 248, 66);
+  position: absolute;
+
+}
+
+#left {
+  border-top: 200px solid transparent;
+  border-bottom: 200px solid transparent;
+  border-left: 200px solid transparent; 
+  border-right: 200px solid palevioletred;
+  position: absolute;
+  align-self: flex-end ;
 }
 
