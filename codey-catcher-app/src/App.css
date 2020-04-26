@@ -87,4 +87,16 @@ nav li{
   border-right: 200px solid palevioletred;
   position: absolute;
 }
+ /* here is where the animation begins; this rotates the main Catcher */
+ @-webkit-keyframes spin-div {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 
