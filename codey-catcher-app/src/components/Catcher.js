@@ -6,16 +6,16 @@ export default function Catcher () {
             <div className="bottomDiamond">
 
             </div>
-            <div className="topTriangle">
+            <div className="topTriangle" id="top">
 
             </div>
-            <div className="topTriangle">
+            <div className="topTriangle" id="right">
 
             </div>
-            <div className="topTriangle">
+            <div className="topTriangle" id="bottom">
 
             </div>
-            <div className="topTriangle">
+            <div className="topTriangle" id="left">
 
             </div>
         </div>
