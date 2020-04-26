@@ -62,8 +62,8 @@ nav li{
   border-bottom: 200px solid transparent;
   border-top: 200px solid rgba(213, 107, 255);
   position: absolute;
-  -webkit-animation: top-lift 1s ease-in-out infinite both;
-	animation: top-lift 1s ease-in-out infinite both;
+  -webkit-animation: top-lift 2s ease-in-out infinite both;
+  animation: top-lift 2s ease-in-out infinite both;
 }
 
 #right {
@@ -72,8 +72,8 @@ nav li{
   border-right: 200px solid transparent;
   border-left: 200px solid turquoise;
   position: absolute;
-  -webkit-animation: right-lift 1s ease-in-out infinite both;
-	animation: right-lift 1s ease-in-out infinite both;
+  -webkit-animation: right-lift 2s ease-in-out infinite both;
+	animation: right-lift 2s ease-in-out infinite both;
 }
 
 #bottom {
@@ -82,8 +82,8 @@ nav li{
   border-top: 200px solid transparent;
   border-bottom: 200px solid rgb(6, 248, 66);
   position: absolute;
-  -webkit-animation: bottom-lift 1s ease-in-out infinite both;
-	animation: bottom-lift 1s ease-in-out infinite both;
+  -webkit-animation: bottom-lift 2s ease-in-out infinite both;
+	animation: bottom-lift 2s ease-in-out infinite both;
 }
 
 #left {
@@ -92,8 +92,8 @@ nav li{
   border-left: 200px solid transparent; 
   border-right: 200px solid palevioletred;
   position: absolute;
-  -webkit-animation: left-lift 1s ease-in-out infinite both;
-	animation: left-lift 1s ease-in-out infinite both;
+  -webkit-animation: left-lift 2s ease-in-out infinite both;
+	animation: left-lift 2s ease-in-out infinite both;
 }
  /* here is where the animation begins; this rotates the main Catcher */
 @keyframes spin-div {
@@ -117,9 +117,15 @@ out how to make them all work with one.*/
     -webkit-transform-origin: top;
             transform-origin: top;
   }
-  100% {
+  50% {
     -webkit-transform: rotateX(70deg);
             transform: rotateX(70deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
     -webkit-transform-origin: top;
             transform-origin: top;
   }
@@ -127,6 +133,12 @@ out how to make them all work with one.*/
 
 @keyframes right-lift {
   0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  50% {
     -webkit-transform: rotateY(0);
             transform: rotateY(0);
     -webkit-transform-origin: left;
@@ -147,9 +159,15 @@ out how to make them all work with one.*/
     -webkit-transform-origin: bottom;
             transform-origin: bottom;
   }
-  100% {
+  50% {
     -webkit-transform: rotateX(70deg);
             transform: rotateX(70deg);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
     -webkit-transform-origin: bottom;
             transform-origin: bottom;
   }
@@ -161,6 +179,12 @@ out how to make them all work with one.*/
             transform: rotateY(0);
     -webkit-transform-origin: right;
             transform-origin: right;
+  }
+  50% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    -webkit-transform-origin: right;
+            transform-origin: rightt;
   }
   100% {
     -webkit-transform: rotateY(70deg);
