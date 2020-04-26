@@ -61,39 +61,38 @@ nav li{
   border-bottom: 200px solid transparent;
   border-top: 200px solid rgba(213, 107, 255);
   position: absolute;
-  -webkit-animation: tab-lift 1s ease-in-out infinite both;
-	animation: tab-lift 1s ease-in-out infinite both;
+  -webkit-animation: top-lift 1s ease-in-out infinite both;
+	animation: top-lift 1s ease-in-out infinite both;
 }
 
 #right {
-  border-left: 200px solid transparent;
+  border-top: 200px solid transparent;
   border-bottom: 200px solid transparent;
   border-right: 200px solid transparent;
-  border-top: 200px solid turquoise;
+  border-left: 200px solid turquoise;
   position: absolute;
-  rotate: 90deg;
+  -webkit-animation: right-lift 1s ease-in-out infinite both;
+	animation: right-lift 1s ease-in-out infinite both;
 }
 
 #bottom {
   border-left: 200px solid transparent;
-  border-bottom: 200px solid transparent;
   border-right: 200px solid transparent;
-  border-top: 200px solid rgb(6, 248, 66);
+  border-top: 200px solid transparent;
+  border-bottom: 200px solid rgb(6, 248, 66);
   position: absolute;
-  rotate: 180deg;
 
 }
 
 #left {
-  border-left: 200px solid transparent;
+  border-top: 200px solid transparent;
   border-bottom: 200px solid transparent;
-  border-right: 200px solid transparent; 
-  border-top: 200px solid palevioletred;
+  border-left: 200px solid transparent; 
+  border-right: 200px solid palevioletred;
   position: absolute;
-  rotate: 270deg;
 }
  /* here is where the animation begins; this rotates the main Catcher */
- @keyframes spin-div {
+@keyframes spin-div {
   0% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
@@ -107,7 +106,7 @@ nav li{
 /* these below lift the top "triangle" divs; I couldn't figure
 out how to make them all work with one.*/
 
-@keyframes tab-lift {
+@keyframes top-lift {
   0% {
     -webkit-transform: rotateX(0);
             transform: rotateX(0);
@@ -122,5 +121,18 @@ out how to make them all work with one.*/
   }
 }
 
-
+@keyframes right-lift {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  100% {
+    -webkit-transform: rotateY(70deg);
+            transform: rotateY(70deg);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+}
 
