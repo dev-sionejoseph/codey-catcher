@@ -5,6 +5,8 @@
   background-image: url('./assets/images/background-one.jpeg');
 }
 
+/* styling for nav bar */
+
 #navWrap {
   background-color: rgba(213, 107, 255, 0.89);
   width: 100%;
@@ -29,6 +31,8 @@ nav li{
 .navItem {
   text-decoration: none;
 }
+
+/* styling for Catcher component; animation to open and close */
 
 .catcherWrap {
   height: 100%;
