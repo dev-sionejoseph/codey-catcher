@@ -21,15 +21,15 @@ export default class DivinationsPage extends Component {
             },
             home:['condo', 'apartment', 'townhome', 'tiny home', 'mansion' , 'house'],
             dependents: {
-                kids: [0,1,2,3],
-                pets: [0,1,2,3]
+                kids: ["way more kids than you planned... but you love them all","no children","2 boys, 1 girl", "identical twins"],
+                pets: ["no pets","1 dog","2 dogs 1 cat","basically a zoo"]
             },
             transportation: ["sports car", "bike", "minivan", "pogo stick", "hatchback", "converted school bus"],
             selections: {
-                spouse:'e',
-                home:'i',
-                dependents:'e',
-                transportation:'i'
+                spouse:'',
+                home:'',
+                dependents:'',
+                transportation:''
             }
         }
         this.handleSelect = this.handleSelect.bind(this);
