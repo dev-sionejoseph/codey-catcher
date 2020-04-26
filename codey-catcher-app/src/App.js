@@ -20,7 +20,9 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path="/">
-              <Instructions />
+              <div id="instructions-wrap">
+                <Instructions />
+              </div>
             </Route>
             <Route path="/divination">
               <DivinationsPage />

@@ -3,6 +3,8 @@
   height: 100vh;
   width: 100vw;
   background-image: url('./assets/images/background-one.jpeg');
+  display: flex;
+  flex-direction: column;
 }
 
 /* styling for nav bar */
@@ -193,4 +195,26 @@ out how to make them all work with one.*/
             transform-origin: right;
   }
 }
+
+/* below is the styling for each "page" component used for routes */
+
+/* Instructions Page */
+
+#instructions-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.instructions-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(245, 245, 245, 0.685);
+  width: 50%;
+  height: 100%;
+}
+
 
