@@ -215,6 +215,35 @@ out how to make them all work with one.*/
   background-color: rgba(245, 245, 245, 0.685);
   width: 50%;
   height: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+#inner-instructions-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 20%;
+  background-color: rgba(255, 255, 255, 0.472);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+.instruction-titles {
+  font-weight: bold;
+  padding-left: 0;
+  margin-left: 0;
+  text-align: center;
+}
+
+
 
 
