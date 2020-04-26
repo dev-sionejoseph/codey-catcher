@@ -3,7 +3,8 @@ import Catcher from '../components/Catcher'
 import QuestionInput from '../components/QuestionInput'
 
 
-let answers =
+let answers = ["The stars say yes.", "The vision is unclear; proceed with caution.", "The answer is no"]
+let currentAnswer = answers[]
 
 export default function AskCodeyPage() {
     return (
@@ -15,7 +16,7 @@ export default function AskCodeyPage() {
                 <Catcher />
             </div>
             <div id="askcodey-bottom">
-                {}
+                
             </div>
         </div>
     )
