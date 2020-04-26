@@ -61,6 +61,8 @@ nav li{
   border-bottom: 200px solid transparent;
   border-top: 200px solid rgba(213, 107, 255);
   position: absolute;
+  -webkit-animation: top-lift 1s ease-in-out infinite both;
+	animation: top-lift 1s ease-in-out infinite both;
 }
 
 #right {
@@ -99,4 +101,17 @@ nav li{
   }
 }
 
+@keyframes spin-div {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* these below lift the top "triangle" divs; I couldn't figure
+out how to make them all work with one. wait. I just did as I typed that. lmao. lemme edit */
 
