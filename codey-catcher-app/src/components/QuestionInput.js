@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class QuestionInput extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
-    }
+export default function QuestionInput (props) {
+    return (
+        <div id="questioninput-wrap">
+            <input type="text" placeholder="Enter your 'yes' or 'no' question here"></input>
+            <button onClick={props.onClick}>Ask Codey!!</button>
+        </div>
+    )
+    
 }
