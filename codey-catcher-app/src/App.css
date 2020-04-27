@@ -10,7 +10,7 @@
 /* styling for nav bar */
 
 #navWrap {
-  background-color: rgba(213, 107, 255, 0.89);
+  background: linear-gradient(90deg, rgba(213,107,255,0.8) 0%, rgba(64,224,208,0.8) 35%, rgba(6,248,66,0.8) 63%, rgba(216,112,147,0.8) 88%);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -72,7 +72,7 @@ nav li{
   border-top: 200px solid transparent;
   border-bottom: 200px solid transparent;
   border-right: 200px solid transparent;
-  border-left: 200px solid turquoise;
+  border-left: 200px solid #40e0d0;
   position: absolute;
   -webkit-animation: right-lift 2s ease-in-out infinite both;
 	animation: right-lift 2s ease-in-out infinite both;
@@ -82,7 +82,7 @@ nav li{
   border-left: 200px solid transparent;
   border-right: 200px solid transparent;
   border-top: 200px solid transparent;
-  border-bottom: 200px solid rgb(6, 248, 66);
+  border-bottom: 200px solid #06f842;
   position: absolute;
   -webkit-animation: bottom-lift 2s ease-in-out infinite both;
 	animation: bottom-lift 2s ease-in-out infinite both;
@@ -92,7 +92,7 @@ nav li{
   border-top: 200px solid transparent;
   border-bottom: 200px solid transparent;
   border-left: 200px solid transparent; 
-  border-right: 200px solid palevioletred;
+  border-right: 200px solid #d87093;
   position: absolute;
   -webkit-animation: left-lift 2s ease-in-out infinite both;
 	animation: left-lift 2s ease-in-out infinite both;
@@ -225,7 +225,8 @@ out how to make them all work with one.*/
   flex-direction: column;
   width: 80%;
   margin-top: 20%;
-  background-color: rgba(255, 255, 255, 0.472);
+  background: linear-gradient(-180deg, rgba(213,107,255,0.8) 0%, rgba(64,224,208,0.8) 35%, rgba(6,248,66,0.8) 63%, rgba(216,112,147,0.8) 88%);
+  border-radius: 5%;
 }
 
 ul {
@@ -233,7 +234,6 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding-left: 0;
 }
 
@@ -243,6 +243,132 @@ ul {
   margin-left: 0;
   text-align: center;
 }
+
+/* Divinations Page  and it's components */
+
+#divinations-page {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#divinations-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:30%;
+  height: 50%;
+  background: linear-gradient(0deg, rgba(213,107,255,0.8) 0%, rgba(64,224,208,0.8) 35%, rgba(6,248,66,0.8) 63%, rgba(216,112,147,0.8) 88%);
+  /* background-color: aquamarine; */
+}
+
+#divinations-center {
+  display: flex;
+  /* background-color: yellow; */
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+
+#divinations-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 50%;
+  background: linear-gradient(0deg, rgba(213,107,255,0.8) 0%, rgba(64,224,208,0.8) 35%, rgba(6,248,66,0.8) 63%, rgba(216,112,147,0.8) 88%);
+  /* background-color: tomato; */
+}
+
+#divinations-right div {
+  /* background-color: rgba(255, 255, 255); */
+  height: 25%;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Ask Codey "page" and it's components */
+
+#askcodey-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+  height: 100%;
+}
+
+#askcodey-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height: 15%;
+  background: linear-gradient(0deg, rgba(213,107,255,0.8) 0%, rgba(64,224,208,0.8) 35%, rgba(6,248,66,0.8) 63%, rgba(216,112,147,0.8) 88%);
+  /* background-color: aquamarine; */
+}
+
+#askcodey-center {
+  display: flex;
+  /* background-color: yellow; */
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#askcodey-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(0deg, rgba(213,107,255,0.8) 0%, rgba(64,224,208,0.8) 35%, rgba(6,248,66,0.8) 63%, rgba(216,112,147,0.8) 88%);
+  /* background-color: tomato; */
+}
+
+#askcodey-result{
+  /* background-color: rgba(255, 255, 255); */
+  height: 80%;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 500%;
+}
+
+#questioninput-wrap {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#questioninput-wrap input{
+  width: 60%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#questioninput-wrap button{
+  width: 10%;
+  height: 25%;
+}
+
+
+
 
 
 

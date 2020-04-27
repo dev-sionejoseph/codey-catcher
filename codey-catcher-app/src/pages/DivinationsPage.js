@@ -73,11 +73,20 @@ export default class DivinationsPage extends Component {
                 <div id="divinations-center">
                     <Catcher />
                 </div>
-                <div id="divinations-center">
-                    <LifeAnswer info={this.state.selections['spouse']}/>
-                    <LifeAnswer info={this.state.selections['home']}/>
-                    <LifeAnswer info={this.state.selections['dependents']}/>
-                    <LifeAnswer info={this.state.selections['transportation']}/>
+                <div id="divinations-right">
+                    <div>You will marry a loving {this.state.chosenGender} named: 
+                        <LifeAnswer info={this.state.selections['spouse']}/>
+                    </div>
+                    <div>You two will live together in a:
+                        <LifeAnswer info={this.state.selections['home']}/>
+                    </div>
+                    <div>You decided on caring for:
+                        <LifeAnswer info={this.state.selections['dependents']}/>
+                    </div>
+                    <div>And you all get around using a:
+                        <LifeAnswer info={this.state.selections['transportation']}/>
+                    </div>
+                    
                 </div>
             </div>
         )
