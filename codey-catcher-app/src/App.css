@@ -309,7 +309,8 @@ ul {
   justify-content: center;
   align-items: center;
   width:100%;
-  height: 15%;
+  max-height: 15%;
+  min-height: 50px;
   background: linear-gradient(0deg, rgba(213,107,255,0.8) 0%, rgba(64,224,208,0.8) 35%, rgba(6,248,66,0.8) 63%, rgba(216,112,147,0.8) 88%);
   /* background-color: aquamarine; */
 }
@@ -330,7 +331,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 15%;
+  max-height: 15%;
   background: linear-gradient(0deg, rgba(213,107,255,0.8) 0%, rgba(64,224,208,0.8) 35%, rgba(6,248,66,0.8) 63%, rgba(216,112,147,0.8) 88%);
   /* background-color: tomato; */
 }
@@ -338,12 +339,12 @@ ul {
 #askcodey-result{
   /* background-color: rgba(255, 255, 255); */
   height: 80%;
-  width: 50%;
+  width: 100%;
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 500%;
+  font-size: 300%;
 }
 
 #questioninput-wrap {
@@ -356,7 +357,7 @@ ul {
 
 #questioninput-wrap input{
   width: 60%;
-  height: 20%;
+  max-height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -365,6 +366,47 @@ ul {
 #questioninput-wrap button{
   width: 10%;
   height: 25%;
+}
+
+/* Love or Loss page and it's components */
+
+#love-or-loss-page {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#love-loss-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:30%;
+  height: 50%;
+  background: linear-gradient(0deg, rgba(213,107,255,0.8) 0%, rgba(64,224,208,0.8) 35%, rgba(6,248,66,0.8) 63%, rgba(216,112,147,0.8) 88%);
+  /* background-color: aquamarine; */
+}
+
+#love-loss-center {
+  display: flex;
+  /* background-color: yellow; */
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+
+#love-loss-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 50%;
+  background: linear-gradient(0deg, rgba(213,107,255,0.8) 0%, rgba(64,224,208,0.8) 35%, rgba(6,248,66,0.8) 63%, rgba(216,112,147,0.8) 88%);
+  /* background-color: tomato; */
 }
 
 
